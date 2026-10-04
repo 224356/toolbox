@@ -10,7 +10,9 @@
     "tools:list": "node scripts/list-tools.mjs"
   },
   "dependencies": {
+    "@imgly/background-removal": "^1.7.0",
     "next": "^16.3.8",
+    "pdf-lib": "^1.17.1",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },

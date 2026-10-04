@@ -14,6 +14,7 @@ export type ToolStatus = 'live' | 'beta' | 'coming-soon';
 export type ToolCategory =
   | 'text'      // 文本处理
   | 'convert'   // 格式转换
+  | 'doc'       // 文档处理（PDF / 简历 / 表格）
   | 'dev'       // 开发者
   | 'image'     // 图片
   | 'ai'        // AI 能力（多为 pro）

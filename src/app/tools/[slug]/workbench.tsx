@@ -18,6 +18,7 @@ import type { ToolProps } from '@/lib/core/types';
 const CATEGORY_LABEL: Record<string, string> = {
   text: '文本处理',
   convert: '格式转换',
+  doc: '文档处理',
   dev: '开发者',
   image: '图片',
   ai: '人工智能',

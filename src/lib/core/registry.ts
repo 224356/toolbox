@@ -56,6 +56,85 @@ register({
   component: () => import('../../tools/text-diff/ui'),
 });
 
+// —— 图片处理 ——
+register({
+  slug: 'image-compress',
+  name: '批量图片压缩',
+  summary: '批量压缩、缩放、转格式。质量可调，全部在浏览器本地完成。',
+  description:
+    '拖进多张图片，调质量、定尺寸、选格式，一键批量压缩。采用 canvas 高质量降采样，大图缩小时分两级重绘以避免锯齿。图片不上传，处理结果可一键打包下载。',
+  category: 'image',
+  tags: ['图片', '压缩', '批量'],
+  plan: 'free',
+  status: 'live',
+  priority: 88,
+  icon: '▣',
+  component: () => import('../../tools/image-compress/ui'),
+});
+
+// —— AI 能力 ——
+register({
+  slug: 'remove-bg',
+  name: 'AI 智能去背景',
+  summary: '一键抠图，输出透明背景 PNG。推理在浏览器本地进行。',
+  description:
+    '基于浏览器内的 ONNX 语义分割模型自动识别人物、商品、动物主体，输出透明背景的 PNG。首次使用需下载模型（之后走浏览器缓存），图片全程不上传。',
+  category: 'ai',
+  tags: ['图片', '抠图', 'AI'],
+  plan: 'free',
+  status: 'beta',
+  priority: 86,
+  icon: '◧',
+  component: () => import('../../tools/remove-bg/ui'),
+});
+
+// —— 文档处理 ——
+register({
+  slug: 'pdf-tools',
+  name: 'PDF 处理',
+  summary: '合并、拆分提取、旋转、删页。常用一次性处理一站搞定。',
+  description:
+    '不用装 Acrobat，四个最常用的 PDF 一次性处理都在这里。支持页码范围写法（如 1-3,5,7-9），基于 pdf-lib 在浏览器本地完成，文件不上传。',
+  category: 'doc',
+  tags: ['PDF', '合并', '拆分'],
+  plan: 'free',
+  status: 'live',
+  priority: 84,
+  icon: '¶',
+  component: () => import('../../tools/pdf-tools/ui'),
+});
+
+register({
+  slug: 'resume-builder',
+  name: '简历生成器',
+  summary: '填表就能出一份排版干净的中文简历，实时预览，导出 PDF。',
+  description:
+    '左边填表、右边实时预览 A4 简历。内置好用的默认示例，改改就能用。导出走浏览器「打印为 PDF」，能直接调用系统中文字体，排版与预览一致。',
+  category: 'doc',
+  tags: ['简历', '求职', 'PDF'],
+  plan: 'free',
+  status: 'live',
+  priority: 82,
+  icon: '▤',
+  component: () => import('../../tools/resume-builder/ui'),
+});
+
+// —— 文本生成 ——
+register({
+  slug: 'xhs-copy',
+  name: '小红书文案生成',
+  summary: '标题公式 + 正文骨架一键生成，可接入自己的 AI 模型出真成稿。',
+  description:
+    '双模式：本地模板引擎零成本产出能直接改着发的初稿（标题公式、正文结构、话题标签）；填入你自己的 OpenAI 兼容 API Key，即可升级为大模型原创成稿。',
+  category: 'text',
+  tags: ['文案', '小红书', '运营'],
+  plan: 'free',
+  status: 'live',
+  priority: 80,
+  icon: '✎',
+  component: () => import('../../tools/xhs-copy/ui'),
+});
+
 // —— 格式转换 ——
 register({
   slug: 'case-convert',
