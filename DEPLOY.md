@@ -1,6 +1,6 @@
 # 部署与本地运行指南
 
-> 适用版本：v0.1.0 ｜ 最后更新：2026-10-04
+> 适用版本：v0.2.0 ｜ 最后更新：2026-10-05
 
 ---
 
@@ -51,10 +51,15 @@ toolbox/
     │   ├── plans.ts
     │   ├── flags.ts
     │   └── quota.ts
-    └── tools/                 ★ 插件目录
-        ├── readability/
-        ├── text-diff/
-        └── case-convert/
+    └── tools/                 ★ 插件目录（8 个工具）
+        ├── readability/       可读性分析
+        ├── text-diff/         文本对比
+        ├── case-convert/      命名转换
+        ├── image-compress/    批量图片压缩
+        ├── remove-bg/         AI 智能去背景
+        ├── pdf-tools/         PDF 处理
+        ├── resume-builder/    简历生成器
+        └── xhs-copy/          小红书文案生成
 ```
 
 ### ❌ 不需要下载（也不要下）

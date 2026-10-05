@@ -29,12 +29,22 @@ toolbox/
 │   │       ├── plans.ts       套餐与限额 —— 收费逻辑唯一事实来源
 │   │       ├── flags.ts       功能开关 —— 灰度/回滚面板
 │   │       └── quota.ts       用量配额 —— 免费版每日限额
-│   ├── tools/                 ★ 每个功能一个目录（插件式）
-│   │   ├── readability/       可读性分析
+│   ├── tools/                 ★ 每个功能一个目录（插件式，当前 8 个）
+│   │   ├── readability/       可读性分析        text
 │   │   │   └── ui.tsx
-│   │   ├── text-diff/         文本对比
+│   │   ├── text-diff/         文本对比          text
 │   │   │   └── ui.tsx
-│   │   └── case-convert/      命名转换
+│   │   ├── case-convert/      命名转换          convert
+│   │   │   └── ui.tsx
+│   │   ├── image-compress/    批量图片压缩      image
+│   │   │   └── ui.tsx
+│   │   ├── remove-bg/         AI 智能去背景     ai (beta)
+│   │   │   └── ui.tsx
+│   │   ├── pdf-tools/         PDF 处理          doc
+│   │   │   └── ui.tsx
+│   │   ├── resume-builder/    简历生成器        doc
+│   │   │   └── ui.tsx
+│   │   └── xhs-copy/          小红书文案生成    text
 │   │       └── ui.tsx
 │   └── app/                   页面（Next.js App Router）
 ├── scripts/
